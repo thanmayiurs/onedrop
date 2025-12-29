@@ -1,22 +1,17 @@
-# Core
+
 streamlit==1.50.0
 pandas==2.3.3
 numpy==2.2.6
-
-# Machine Learning
 scikit-learn==1.7.2
-scipy==1.16.1
-
-# Visualization
 plotly==6.3.1
-
-# Network
 requests==2.32.5
-
-# Computer Vision - headless for servers
-opencv-python-headless==4.10.0.84
+opencv-python==4.12.0.88
 pyzbar==0.1.9
-
-# QR Code - [pil] includes Pillow support
 qrcode[pil]==8.2
 Pillow==11.3.0
+
+
+scipy==1.16.1
+joblib==1.5.2
+threadpoolctl==3.6.0
+tenacity==9.1.2
