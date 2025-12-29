@@ -1,11 +1,13 @@
 [phases.setup]
-nixPkgs = ["python311", "libGL", "glib", "zbar"]
+nixPkgs = [
+  "python311",
+  "mesa",
+  "glib",
+  "zbar"
+]
 
 [phases.install]
 cmds = ["pip install -r requirements.txt"]
-
-[phases.build]
-cmds = []
 
 [start]
 cmd = "streamlit run app.py --server.port=$PORT --server.address=0.0.0.0 --server.headless=true"
